@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <title>Scott Kenning</title>
+</head>
+<body>
+    <nav id="top">
+        <div class="logo">
+            <h4>Scott Kenning</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+        </div>
+    </nav>
+    <main>
+        <section class="masthead"  id="masthead">
+            <div class="text-container">
+                <h1> Hi, I'm Scott</h1>
+                <p>I'm a second year Software Engineering student at the University of Victoria</p>
+            </div>
+            <div class="image-container">
+                <img src="resources/suit.jpg">
+            </div>
+        </section>
+
+        <section class="showcase after" id="projects">
+            <div class="text-container">
+                <h2> My Projects </h2>
+                <p class="head"> See all of my projects on my <a href="https://github.com/Scott-Kenning?tab=repositories" target = "_blank">Github</a></p>
+            </div>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="resources/memory.jpg">
+                    <div class="text-container">
+                        <h3> Memory Game</h3>
+                        <p>A Java based memory game that scans a file for questions/answers</p>
+                        <a href="https://github.com/scott-kenning/memory-game" target="_blank"> View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="resources/calculator.jpg">
+                    <div class="text-container">
+                        <h3> Calculator </h3>
+                        <p>A four function calculator made with Javascript</p>
+                        <a href="https://scott-kenning.github.io/Calculator" target="_blank"> View Project</a>
+
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="resources/snake.jpg">
+                    <div class="text-container">
+                        <h3> Snake</h3>
+                        <p>A classic game of snake made using Javascript</p>
+                        <a href="https://scott-kenning.github.io/Snake" target="_blank"> View Project</a>
+
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="resources/pokedex.jpg">
+                    <div class="text-container">
+                        <h3> Pokedex</h3>
+                        <p>A React/Redux Pokemon database interface using PokeAPI</p>
+                        <a href="https://scott-kenning.github.io/Pokedex" target="_blank"> View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="abt after" id="about-section">
+            <h2> About Me </h2>
+            <img src="resources/square.jpg">
+            <article class="about">
+                <div class="btn-container">
+                    <button class="tab-btn active btn-1" data-id="about">About</button>
+                    <button class="tab-btn btn-2" data-id="classes">Classes</button>
+                    <button class="tab-btn btn-3" data-id="skills">Skills</button>
+                </div>
+                <article class="about-content">
+                    <div class="content active" id="about"><p> I am currently enrolled in my second year of software engineering at the university of victoria and have taken several programming courses already. During these courses I coded using C and Java, and we learned advanced data structures such as hash maps, search trees, etc. as well as programming fundamentals such as object oriented programming, classes/subclasses, and error handling.</p>
+                        <br>
+                        <p> I have also taken coding classes outside of my schooling through codecademy.com. Through codecademy I completed the "Front End Engineer career Path", which gives skills in HTML/CSS, Javascript, React, and Redux.</p></div>
+                    <div class="content" id="classes"><p>Classes</p></div>
+                    <div class="content" id="skills"><p>Skills</p></div>
+                </article>
+            </article>
+        </section>
+        <section class="contact after" id="contact">
+            <h2>Contact</h2>
+            <div class="text-container">
+                <p>Have a question, notice an error, or want to get in contact with me? Please use the form!</p>
+            </div>
+            <div class="form-container">
+                <form name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xpzkykno" method="post">
+                    <fieldset>
+                        <label for="full-name">Name</label> 
+                        <input type="text" name="name" id="full-name" placeholder="Name" required="">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="Email Address" required="">
+                        <label for="message">Message</label>
+                        <textarea rows="8" name="message" id="message" placeholder="Your message goes here" required=""></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    </fieldset>
+                    <input id ="submit" type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <footer class="after">
+            <ul>
+                <li><a href="https://github.com/Scott-Kenning?tab=repositories" target="blank"> Github</a></li>
+                <li><a href="#top" class="last"> Back to top</a></li>
+                <li><a href="">LinkedIn</a></li>
+            </ul>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

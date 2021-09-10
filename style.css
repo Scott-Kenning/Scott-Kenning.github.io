@@ -42,7 +42,7 @@ body {
 
 .after {
     animation-name: fadeIn;
-    animation-delay: 4.25s;
+    animation-delay: 4s;
     animation-duration: 2s;
     animation-fill-mode: backwards;
 }
@@ -194,7 +194,7 @@ nav {
 
 .masthead .image-container {
     animation-name: fadeIn;
-    animation-delay: 3.75s;
+    animation-delay: 3.5s;
     animation-duration: 2s;
     animation-fill-mode: backwards;
 
@@ -212,7 +212,7 @@ nav {
 .masthead p {
     font-size: 1.2em;
     animation-name: fadeIn;
-    animation-delay: 2s;
+    animation-delay: 1.75s;
     animation-duration: 2s;
     animation-fill-mode: backwards;
 
@@ -527,7 +527,7 @@ footer li a {
     }
 }
 
-@keyframes afadeIn {
+@keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }

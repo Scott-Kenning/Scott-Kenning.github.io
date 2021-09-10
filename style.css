@@ -23,7 +23,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(240,240,240);
     padding-top: 20px;
     color: var(--text-color);
 }
@@ -38,6 +37,7 @@ html, body {
 
 body {
     position: relative;
+    background-color: rgb(240,240,240);
 }
 
 .after {
@@ -312,11 +312,12 @@ nav {
 }
 
 .about button {
-    width: 33.33%;
+    width: 50%;
     height: 3rem;
     font-size: 1rem;
     border: 0px;
     border-bottom: 2px solid var(--secondary-color);
+    background-color: var(--background-color);
 }
 
 .abt button:hover {
@@ -334,6 +335,11 @@ nav {
 .content {
     display: none;
     padding: 20px;
+    text-decoration: none;
+}
+
+.content li {
+    list-style: none;
 }
 
 .tab-btn.active {
@@ -421,8 +427,9 @@ footer li a {
         flex-direction: row;
         justify-content: center;
         font-size: 1.5rem;
+        width: 60%;
+        margin-left: 20%;
     }
-
     .masthead h1 {
         font-size: 5rem;
     }
@@ -432,7 +439,8 @@ footer li a {
     }
 
     .masthead .image-container {
-        width: 50%;
+        padding-left: 5%;
+        width: 45%;
     }
 
     .masthead img {
@@ -442,17 +450,20 @@ footer li a {
     .projects-container {
         flex-direction: row;
         flex-wrap:wrap;
+        width: 60%;
     }
 
     .project {
         height: 250px;
-        width: 45%;
+        width: 90%;
         margin: 20px;
     }
 
     .abt {
         flex-direction: row;
         justify-content: center;
+        width: 60%;
+        margin-left: 20%;
     }
 
     .abt h2 {
@@ -478,20 +489,12 @@ footer li a {
     }
 
     footer ul {
-        width: 20%;
+        width: 30%;
     }
 }
 
-@media screen and (min-width:1350px) {
-    .masthead {
-        width: 60%;
-        margin-left: 20%;
-    }
 
-    .projects-container {
-        width: 60%;
-    }
-
+@media screen and (min-width: 1500px) {
     .abt img {
         display: block;
         object-fit: scale-down;
@@ -504,27 +507,27 @@ footer li a {
 
     .about {
         height: 40vh;
+        width: 60%;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
     }
 
-    .about {
+
+    .abt {
         width: 60%;
+        margin-left: 20%;
     }
 
     .btn-1 {
         border-top-left-radius: 0;
     }
-}
 
-@media screen and (min-width: 1500px) {
-    .abt {
-        width: 60%;
-        margin-left: 20%;
+    .project {
+        width: 45%;
     }
 }
 
-@keyframes fadeIn {
+@keyframes afadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
